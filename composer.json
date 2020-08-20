@@ -1,0 +1,12 @@
+{
+    "name": "willy/reactphp-experiment",
+    "authors": [
+        {
+            "name": "Willy Stadnick",
+            "email": "willy.stadnick@gmail.com"
+        }
+    ],
+    "require": {
+        "react/event-loop": "^1.1.1"
+    }
+}
