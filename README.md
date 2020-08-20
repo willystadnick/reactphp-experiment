@@ -5,7 +5,7 @@ ReactPHP experiment made with PHP 7
 ## Run
 
 ```
-php {{file}}.php
+php 21-http-server.php.php
 ```
 
 ## Test
