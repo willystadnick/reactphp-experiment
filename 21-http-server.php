@@ -19,7 +19,7 @@ $loop->addReadStream($server, function ($server) use ($loop) {
     $date = new DateTime();
     $now = $date->format('Y-m-d H:i:s');
     $md5 = md5($now);
-    $content = "now ".$now."\nmd5 ".$md5;
+    $content = ">begin\nnow ".$now."\nmd5 ".$md5."\nend<";
     $data = "HTTP/1.1 200 OK\r\nContent-Length: ".strlen($content)."\r\n\r\n".$content."\n";
     $loop->addWriteStream($conn, function ($conn) use (&$data, $loop) {
         $written = fwrite($conn, $data);
